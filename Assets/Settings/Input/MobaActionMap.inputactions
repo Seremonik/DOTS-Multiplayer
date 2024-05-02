@@ -1,0 +1,94 @@
+{
+    "name": "MOBA",
+    "maps": [
+        {
+            "name": "GameplayMap",
+            "id": "95dd5ff7-fd1d-4b07-9d81-eb9a5c15fee6",
+            "actions": [
+                {
+                    "name": "SelectMovePosition",
+                    "type": "Button",
+                    "id": "88b25feb-b913-477e-9699-cead8157f138",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AoeAbility",
+                    "type": "Button",
+                    "id": "f32a5b28-3c4d-4252-a34d-8e0124f274ba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SkillShotAbility",
+                    "type": "Button",
+                    "id": "53f08102-1b29-4653-8fea-7aff5e2c4641",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ConfirmSkillShotAbility",
+                    "type": "Button",
+                    "id": "d5914889-322c-4ff5-b9eb-9fbec183f782",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7c64440d-da82-43f4-acdc-94ce3a391621",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectMovePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d496c07-9bfc-4daf-a6ad-0ad68b52d128",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AoeAbility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ed89afb-fc1c-45f8-b383-481a3345b647",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SkillShotAbility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38ee0075-731f-4418-a179-4a61bf40a576",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ConfirmSkillShotAbility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
