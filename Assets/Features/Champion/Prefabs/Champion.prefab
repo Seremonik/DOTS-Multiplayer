@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -5966621027409443271}
   - component: {fileID: -5166806152498583108}
   - component: {fileID: -3869222302772012573}
+  - component: {fileID: 671875366239977913}
+  - component: {fileID: 3773806840411135304}
   m_Layer: 0
   m_Name: Champion
   m_TagString: Untagged
@@ -329,3 +331,30 @@ MonoBehaviour:
     Tag05: 0
     Tag06: 0
     Tag07: 0
+--- !u!114 &671875366239977913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829406237166651796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64234f89c08e4ea789b0b207d2de4388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHitPoints: 1000
+--- !u!114 &3773806840411135304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829406237166651796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16c5973915d45fdaf4b3110face0f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AoeAbility: {fileID: 2439655610093264639, guid: c53a2fb70a6422341a89511afbdd022f,
+    type: 3}

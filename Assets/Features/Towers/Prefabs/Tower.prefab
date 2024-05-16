@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 15b27ed1f5ad6b24abafb31cb5a1fe57, type: 2}
+  - {fileID: 2100000, guid: 3acc86eae3227fa4698d72bd59640cda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,6 +117,8 @@ GameObject:
   - component: {fileID: 4429753394215082813}
   - component: {fileID: 3329782434541800124}
   - component: {fileID: 437694762051808861}
+  - component: {fileID: -111708776014003927}
+  - component: {fileID: -5541420248324791203}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -213,3 +215,29 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-111708776014003927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3999276478494918724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64234f89c08e4ea789b0b207d2de4388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHitPoints: 250
+--- !u!114 &-5541420248324791203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3999276478494918724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5754300b26648a3a6e52a9cb8399c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MobaTeam: 0

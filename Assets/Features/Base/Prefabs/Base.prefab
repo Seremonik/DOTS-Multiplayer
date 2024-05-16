@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6608682090632676770}
   - component: {fileID: 1325445178314880245}
   - component: {fileID: 1434350829617203505}
+  - component: {fileID: 474011238704395794}
+  - component: {fileID: 6928087048358121104}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -568,3 +570,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &474011238704395794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083252619119855022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64234f89c08e4ea789b0b207d2de4388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHitPoints: 500
+--- !u!114 &6928087048358121104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083252619119855022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5754300b26648a3a6e52a9cb8399c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MobaTeam: 0

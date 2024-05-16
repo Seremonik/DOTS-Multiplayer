@@ -19,7 +19,8 @@ namespace Features.Champion.Scripts.Bakers
                 AddComponent<URPMaterialPropertyBaseColor>(entity);
                 AddComponent<ChempionMoveTargetPosition>(entity);
                 AddComponent(entity, new CharacterMoveSpeed() { Value = authoring.MoveSpeed });
-                ;
+                AddComponent<AbilityInput>(entity);
+                
             }
         }
     }
