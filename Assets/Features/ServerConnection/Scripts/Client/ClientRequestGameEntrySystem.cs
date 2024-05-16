@@ -38,6 +38,7 @@ namespace Features.ServerConnection.Scripts.Client
                     TargetConnection = networkId
                 });
             }
+
             ecb.Playback(state.EntityManager);
         }
     }

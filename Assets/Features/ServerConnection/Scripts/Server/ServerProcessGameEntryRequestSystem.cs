@@ -1,3 +1,4 @@
+using Features.Champion.Scripts;
 using Features.ServerConnection.Scripts.Common;
 using Unity.Collections;
 using Unity.Entities;
@@ -42,9 +43,23 @@ namespace Features.ServerConnection.Scripts.Server
 
                 var newChamp = ecb.Instantiate(championPrefab);
                 ecb.SetName(newChamp, "Champion");
-                var newSpawnPosition = new float3(0, 1, 0);
-                var newTransform = LocalTransform.FromPosition(newSpawnPosition);
+                float3 spawnPosition = float3.zero;
+                
+                if (requestedTeamType == TeamType.Blue)
+                {
+                    spawnPosition = new float3(-50, 1, -50);
+                }
+                else if (requestedTeamType == TeamType.Red)
+                {
+                    spawnPosition = new float3(50, 1, 50);
+                }
+                
+                var newTransform = LocalTransform.FromPosition(spawnPosition);
                 ecb.SetComponent(newChamp, newTransform);
+                ecb.SetComponent(newChamp, new GhostOwner(){NetworkId = clientId});
+                ecb.SetComponent(newChamp, new MobaTeam(){Team = requestedTeamType});
+                
+                ecb.AppendToBuffer(requestSource.SourceConnection, new LinkedEntityGroup{Value = newChamp});
             }
 
             ecb.Playback(state.EntityManager);

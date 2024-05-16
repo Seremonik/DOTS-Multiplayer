@@ -4,8 +4,9 @@ using Unity.NetCode;
 
 namespace Features.Champion.Scripts
 {
-    public struct ChempionTargetPosition : IInputComponentData
+    [GhostComponent(PrefabType = GhostPrefabType.AllPredicted)]
+    public struct ChempionMoveTargetPosition : IInputComponentData
     {
-        public float3 Value;
+        [GhostField(Quantization = 0)]public float3 Value;
     }
 }

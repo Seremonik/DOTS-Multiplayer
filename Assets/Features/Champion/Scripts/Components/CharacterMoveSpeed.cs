@@ -4,6 +4,6 @@ namespace Features.Champion.Scripts.Components
 {
     public struct CharacterMoveSpeed : IComponentData
     {
-        
+        public float Value;
     }
 }

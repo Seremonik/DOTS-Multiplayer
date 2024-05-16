@@ -75,10 +75,10 @@ public class ClientConnectionManager : MonoBehaviour
 
         var team = teamDropdown.value switch
         {
-            0 => TeamType.None,
+            0 => TeamType.AutoAssign,
             1 => TeamType.Blue,
             2 => TeamType.Red,
-            _ => TeamType.AutoAssign
+            _ => TeamType.None
         };
 
         var teamRequestEntity = clientWorld.EntityManager.CreateEntity();
