@@ -17,6 +17,7 @@ namespace Features.Champion.Scripts.Systems
             Enabled = false;
             var mainCameraEntity = SystemAPI.GetSingletonEntity<MainCameraTag>();
             EntityManager.SetComponentData(mainCameraEntity, new MainCamera{Value = Camera.main});
+            var z = 7;
         }
     }
 }
